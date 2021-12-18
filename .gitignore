@@ -273,17 +273,17 @@ init-firebase.*
 *.bmp
 *.eps
 *.gif
-#*.ico
+*.ico
 *.jpg
 *.jpeg
 *.png
 *.ps
 *.psd
 *.raw
-#*.svg
+*.svg
 *.tif
 *.tiff
-#*.webp
+*.webp
 #audio
 *.aac
 *.adts
@@ -335,7 +335,7 @@ init-firebase.*
 *.excalidraw
 *.xcf
 *.tex
-#*.txt
+*.txt
 *.tmp
 
 #compressed files
