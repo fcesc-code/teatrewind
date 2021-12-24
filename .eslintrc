@@ -10,13 +10,16 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["jest", "html"],
+  "plugins": ["jest", "html", "tailwindcss"],
   "rules": {
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
-    "no-plusplus": 0
+    "no-plusplus": 0,
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-contradicting-classname": "error"
   }
 }

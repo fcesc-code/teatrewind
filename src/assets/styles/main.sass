@@ -1,6 +1,15 @@
 @use 'base/reset'
 @use 'base/index'
 
+@use 'layouts/container'
+
+@use 'pages/home'
+
 @tailwind base
 @tailwind components
 @tailwind utilities
+
+@layer components
+  .width-container
+    @apply w-full my-0 mx-auto bg-dark
+
