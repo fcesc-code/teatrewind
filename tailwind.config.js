@@ -30,6 +30,15 @@ module.exports = {
         fserif: ["Noto Serif", "Georgia", "Times New Roman", "serif"],
         fhand: ["Architects Daughter", "Segoe UI"],
       },
+      fontSize: {
+        xs: ".85rem",
+        sm: ".95rem",
+        base: "1rem",
+        m: "1.2rem",
+        l: "1.7rem",
+        xl: "2.3rem",
+        xxl: "3.9rem",
+      },
       spacing: {
         vh90: "90vh",
       },

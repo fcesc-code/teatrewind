@@ -45,23 +45,26 @@
       </nav>
     </header>
     <main class="width-container">
-      <header class="title">
-        <h1 class="title--standard">La vida es teatro</h1>
-        <h2 class="title--secondary">Grup tebarri</h2>
+      <header>
+        <h1 class="p-0 text-txt_title">La vida es teatro</h1>
+        <h2 class="p-0 text-txt_lightbluish">Grup tebarri</h2>
       </header>
       <article>
         <section>
-          <!-- <div
+          <div
             id="carouselExampleIndicators"
-            class="carousel slide"
+            class="relative slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
+            <!-- BUG: where is slide in bootstrap css? -->
+            <div
+              class="absolute right-0 bottom-0 left-0 z-2 flex justify-center p-0 mx-[15%] mb-4 list-none"
+            >
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="0"
-                class="active"
+                class="opacity-100"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -78,22 +81,22 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div class="relative w-full overflow-hidden carousel-inner">
+              <div class="relative hidden float-left w-full mr-[-100%] block">
                 <img
                   src="./assets/images/mascaras.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item">
+              <div class="relative hidden float-left w-full mr-[-100%]">
                 <img
                   src="./assets/images/teatro.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item">
+              <div class="relative hidden float-left w-full mr-[-100%]">
                 <img
                   src="./assets/images/aquelarre.webp"
                   class="d-block w-100"
@@ -102,7 +105,7 @@
               </div>
             </div>
             <button
-              class="carousel-control-prev"
+              class="absolute top-0 bottom-0 z-1 flex justify-center items-center w-[15%] p-0 text-txt_title text-center bg-none border-0 opacity-1 transition-opacity ease duration-150 motion-reduce:transition-none"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
@@ -114,21 +117,24 @@
               <span class="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next"
+              class="absolute top-0 bottom-0 z-1 flex justify-center items-center w-[15%] p-0 text-txt_title text-center bg-none border-0 opacity-1 transition-opacity ease duration-150 motion-reduce:transition-none"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                class="inline-block w-8 h-8 bg-no-repeat carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span
+                class="absolute w-[1px] h-[1px] p-0 -m-[1px] overflow-hidden whitespace-nowrap border-0 visually-hidden"
+                >Next</span
+              >
             </button>
           </div>
-        </section> -->
+        </section>
         <h2>
-          <span class="txt--highlighted">Bodas de sangre,</span>
+          <span class="p-0 text-txt_highlighted">Bodas de sangre,</span>
           una mirada recursiva
         </h2>
         <p>
@@ -145,16 +151,18 @@
           arrodilladas en el suelo lloran. Así termina la tragedia.
           <br />Fuente:<cite>Universolorca.com</cite>
         </p>
-        <ul class="list">
+        <ul
+          class="list flex flex-column flex-nowrap justify-start items-center py-10 px-0 text-txt_white list-none"
+        >
           <li class="list__item">
             <section class="list__item-number">1</section>
-            <section class="list__item-body">
-              <p class="list__item-title">
-                <span class="txt--highlighted">La poesía</span> no quiere
+            <section class="self-start w-full">
+              <p class="pt-3 pb-2 font-extrabold text-txt_white tracking-wider">
+                <span class="text-txt_highlighted">La poesía</span> no quiere
                 adeptos,
-                <span class="txt--highlighted">quiere amantes</span>
+                <span class="text-txt_highlighted">quiere amantes</span>
               </p>
-              <p class="list__item-text">
+              <p class="pb-3 text-txt_white">
                 El autor de La Casa de Bernarda Alba no pensó jamás que moriría
                 de un tiro, una mañana muy temprano en un paraje a las afueras
                 de su Granada.
@@ -163,13 +171,14 @@
           </li>
           <li class="list__item">
             <section class="list__item-number">2</section>
-            <section class="list__item-body">
-              <p class="list__item-title">
+            <section class="self-start w-full">
+              <p class="pt-3 pb-2 font-extrabold text-txt_white tracking-wider">
                 Sólo
-                <span class="txt--highlighted">el misterio nos hace vivir</span
+                <span class="text-txt_highlighted"
+                  >el misterio nos hace vivir</span
                 >. Sólo el misterio
               </p>
-              <p class="list__item-text">
+              <p class="pb-3 text-txt_white">
                 Todas las cosas tienen su misterio, y la poesía es el misterio
                 que tienen todas las cosas
               </p>
@@ -177,13 +186,15 @@
           </li>
           <li class="list__item">
             <section class="list__item-number">3</section>
-            <section class="list__item-body">
-              <p class="list__item-title">
-                <span class="txt--highlighted">El más terrible</span> de todos
-                los sentimientos es el sentimiento de
-                <span class="txt--highlighted">tener la esperanza muerta</span>
+            <section class="self-start w-full">
+              <p class="pt-3 pb-2 font-extrabold text-txt_white tracking-wider">
+                <span class="text-txt_highlighted">El más terrible</span> de
+                todos los sentimientos es el sentimiento de
+                <span class="text-txt_highlighted"
+                  >tener la esperanza muerta</span
+                >
               </p>
-              <p class="list__item-text">
+              <p class="pb-3 text-txt_white">
                 (...) <br />
                 Maldita sea siempre toda guerra, <br />
                 que el mismo vencedor también la pierde.<br />
@@ -220,17 +231,29 @@
           se iudicet quicquam debere qui tempus accepit, cum interim hoc unum
           est quod ne gratus quidem potest reddere.
         </p>
-        <figure class="blockquote__container">
-          <blockquote class="blockquote__text">
+        <figure
+          class="relative flex flex-column flex-nowrap items-center justify-start mx-6 my-8"
+        >
+          <blockquote
+            class="my-4 md:my-0 mx-0 p-7 text-txt_main border-2 border-solid border-txt_highlighted rounded-tr-6"
+          >
             Tú eres más rica que yo. Las viñas valen un capital. Cada pámpano
             una moneda de plata. Lo que siento es que las tierras...
             ¿entiendes?... estén separadas. A mí me gusta todo junto. Una espina
             tengo en el corazón, y es la huertecilla esa metida entre mis
             tierras, que no me quieren vender por todo el oro del mundo.
           </blockquote>
-          <cite class="blockquote__source">
-            <p class="blockquote__work">Bodas de Sangre</p>
-            <p class="blockquote__author">Federico García Lorca</p>
+          <cite class="self-end w-[min(80%,30rem)] mb-6 -translate-y-6">
+            <p
+              class="pl-8 text-txt_hightlighted border-r-solid border-r-2 border-r-txt_highlighted"
+            >
+              Bodas de Sangre
+            </p>
+            <p
+              class="pl-8 font-semibold text-txt_black bg-txt_highlighted border-2 border-solid border-txt_highglighted rounded-tl-1 rounded-bl-6 rounded-br-6"
+            >
+              Federico García Lorca
+            </p>
           </cite>
         </figure>
         <p>
@@ -253,14 +276,18 @@
         </p>
       </article>
     </main>
-    <footer class="footer width-container">
-      <section class="footer__content">
-        <p class="footer__text">
-          <a class="footer__links" href="https://github.com/fcesc-code"
+    <footer
+      class="width-container h-12 flex flex-column-reverse md:flex-row flex-nowrap items-center justify-start md:justify-end text-txt_main bg-dark text-m"
+    >
+      <section class="h-full self-center">
+        <p class="p-0 text-m leading-12 text-center md:text-left">
+          <a
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
+            href="https://github.com/fcesc-code"
             >Francesc Brugarolas</a
           >
           <a
-            class="footer__links"
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
             href="https://uoc.edu"
             title="Universitat Oberta de Catalunya"
             >UOC</a
@@ -268,8 +295,10 @@
           <time datetime="2021-11">Nov 2021</time>
         </p>
       </section>
-      <section class="footer__content">
-        <ul class="footer__social">
+      <section class="h-full self-center">
+        <ul
+          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12"
+        >
           <li class="footer__socialIcon">
             <a href="https://twitter.com">
               <svg

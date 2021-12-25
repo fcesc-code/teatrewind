@@ -9,7 +9,94 @@
 @tailwind components
 @tailwind utilities
 
+$fsize_standard: 1rem
+$fsize_xs: .85rem
+$fsize_s: .95rem
+$fsize_m: 1.2rem
+$fsize_l: 1.7rem
+$fsize_xl: 2.3rem
+$fsize_xxl: 3.9rem
+$fsize_reduce: .85em
+$fsize_increase: 1.2em
+
+@layer base
+  h1 
+    @apply px-0 py-6 text-center text-[clamp($fsize_xxl,$fsize_xl+2.8vw,5.5rem)]
+  h2
+    @apply px-0 py-5 text-center text-[clamp($fsize_xl,$fsize_l+2.2vw,$fsize_xxl)] font-fhand leading-14 font-normal
+  h3
+    @apply px-0 py-4 text-center text-[clamp($fsize_l,$fsize_m+1.8vw,$fsize_xl)]
+  h4
+    @apply px-0 py-3 text-center text-[clamp($fsize_m,$fsize_standard+1.2vw,$fsize_l)]
+  h5, h6
+    @apply px-0 py-2 text-center text-[clamp($fsize_standard,$fsize_s+1vw,$fsize_m+.25rem)] font-fsans
+  p, blockquote, ol, ul
+    @apply px-0 py-2 text-[clamp($fsize_standard,$fsize_s+1vw,$fsize_m+.25rem)] font-fsans
+  small
+    @apply font-fsans
+  p
+    @apply px-0 py-6 leading-10
+    word-spacing: .04rem
+  a, span, cite
+    @apply font-[inherit] text-[inherit]
+  blockquote
+    @apply leading-9 italic
+  li
+    @apply px-0 py-1
+  .smaller
+    @apply text-[.8em]
+  .larger
+    @apply text-[1.2em]
+
+
 @layer components
   .width-container
     @apply w-full my-0 mx-auto bg-dark
+  .list__item
+    @apply flex flex-column md:flex-row flex-nowrap md:flex-wrap items-center md:items-start justify-start w-full md:w-[80%]
+  .list__item-number
+    @apply relative w-8 mx-8 my-6 text-txt_lightbluish translate-y-2 self-start md:self-auto
+  .footer__socialIcon
+    @apply p-0 my-0 mx-[calc(3rem*1.5)]
 
+.carousel-inner::after
+  display: block
+  clear: both
+  content: ""
+
+.carousel-control-next-icon
+  background-position: 50%
+  background-size: 100% 100%
+
+.visually-hidden
+  clip: rect(0, 0, 0, 0) !important
+
+.list::before
+  width: 80%
+  content: ''
+  border-bottom: 1px solid $c_txt_lightbluish
+  
+.list::after
+  width: 80%
+  content: ''
+  border-top: 1px solid $c_txt_lightbluish
+
+.list__item-number::after
+  position: absolute
+  top: -.6rem
+  left: -1.2rem
+  padding: 1.5rem
+  content: ''
+  border: 1px solid $c_txt_lightbluish
+  border-radius: 50%
+
+.blockquote__text::before
+  position: absolute
+  top: 1rem
+  bottom: 3rem
+  left: -1rem
+  z-index: 2
+  width: calc(1rem + 20%)
+  height: 0
+  content: ''
+  border: 4px solid $c_bg_dark
