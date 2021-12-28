@@ -14,7 +14,7 @@
   <body class="bg-dark">
     <header
       id="top"
-      class="relative w-full my-0 mx-auto bg-dark flex flex-col shrink-0 items-start justify-center md:justify-start px-4"
+      class="width-container relative w-full my-0 mx-auto bg-dark flex flex-col shrink-0 items-start justify-center md:justify-start px-4"
     >
       <nav>
         <ul class="flex flex-row flex-wrap items-center justify-end list-none">
@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main class="m-0 h-full grid grid-customposter">
+    <main class="m-0 h-full grid grid-customposter width-container">
       <h1
         class="justify-self-start self-end m-0 -translate-x-12 grid-title-content"
       >
@@ -79,14 +79,18 @@
         </datetime>
       </section>
     </main>
-    <footer class="footer width-container shrink-0">
-      <section class="footer__content">
-        <p class="footer__text">
-          <a class="footer__links" href="https://github.com/fcesc-code"
+    <footer
+      class="width-container h-12 flex flex-column-reverse md:flex-row flex-nowrap items-center justify-start md:justify-end text-txt_main bg-dark text-m"
+    >
+      <section class="h-full self-center">
+        <p class="p-0 text-m leading-12 text-center md:text-left">
+          <a
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
+            href="https://github.com/fcesc-code"
             >Francesc Brugarolas</a
           >
           <a
-            class="footer__links"
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
             href="https://uoc.edu"
             title="Universitat Oberta de Catalunya"
             >UOC</a
@@ -94,8 +98,10 @@
           <time datetime="2021-11">Nov 2021</time>
         </p>
       </section>
-      <section class="footer__content">
-        <ul class="footer__social">
+      <section class="h-full self-center">
+        <ul
+          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12"
+        >
           <li class="footer__socialIcon">
             <a href="https://twitter.com">
               <svg

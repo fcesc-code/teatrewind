@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./assets/styles/main.sass" />
     <title>tebarri</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <header
       id="top"
-      class="relative flex flex-col shrink-0 items-start justify-center md:justify-start px-4"
+      class="relative flex flex-col shrink-0 items-start justify-center md:justify-start px-4 width-container"
     >
       <nav>
         <ul class="flex flex-row flex-wrap items-center justify-end list-none">
@@ -45,17 +45,22 @@
       </nav>
     </header>
     <main class="width-container">
-      <header class="title">
-        <h1 class="title--standard">Actores y personajes</h1>
-        <h2 class="title--secondary">Grup tebarri</h2>
+      <header>
+        <h1 class="p-0 text-txt_title">Actores y personajes</h1>
+        <h2 class="p-0 text-txt_lightbluish">Grup tebarri</h2>
       </header>
-      <section class="mosaic">
-        <div class="card__container">
-          <div id="card_01" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+      <section class="flex flex-row flex-wrap justify-center content-start">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_01"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/lamadre.webp"
                   alt=""
                 />
@@ -72,12 +77,17 @@
             </section>
           </div>
         </div>
-        <div class="card__container">
-          <div id="card_02" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_02"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/elpadre.webp"
                   alt=""
                 />
@@ -94,12 +104,17 @@
             </section>
           </div>
         </div>
-        <div class="card__container">
-          <div id="card_02" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_02"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/leonardo.webp"
                   alt=""
                 />
@@ -116,12 +131,17 @@
             </section>
           </div>
         </div>
-        <div class="card__container">
-          <div id="card_02" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_02"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/lanovia.webp"
                   alt=""
                 />
@@ -138,12 +158,17 @@
             </section>
           </div>
         </div>
-        <div class="card__container">
-          <div id="card_02" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_02"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/lavecina.webp"
                   alt=""
                 />
@@ -160,12 +185,17 @@
             </section>
           </div>
         </div>
-        <div class="card__container">
-          <div id="card_02" class="card__content">
-            <section class="card__front">
-              <picture class="card__img-container">
+        <div
+          class="relative w-[min(60vh,25rem)] h-[min(calc(60vh+5rem),30rem)] m-6 overflow-hidden cursor-pointer"
+        >
+          <div
+            id="card_02"
+            class="absolute w-full h-full duration-500 card__content"
+          >
+            <section class="t-0 card__front">
+              <picture>
                 <img
-                  class="card__img"
+                  class="w-[min(60vh,25rem)] max-h-[min(60vh,25rem)] card__img"
                   src="./assets/images/muchacho.webp"
                   alt=""
                 />
@@ -183,14 +213,18 @@
         </div>
       </section>
     </main>
-    <footer class="footer width-container">
-      <section class="footer__content">
-        <p class="footer__text">
-          <a class="footer__links" href="https://github.com/fcesc-code"
+    <footer
+      class="width-container h-12 flex flex-column-reverse md:flex-row flex-nowrap items-center justify-start md:justify-end text-txt_main bg-dark text-m"
+    >
+      <section class="h-full self-center">
+        <p class="p-0 text-m leading-12 text-center md:text-left">
+          <a
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
+            href="https://github.com/fcesc-code"
             >Francesc Brugarolas</a
           >
           <a
-            class="footer__links"
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
             href="https://uoc.edu"
             title="Universitat Oberta de Catalunya"
             >UOC</a
@@ -198,8 +232,10 @@
           <time datetime="2021-11">Nov 2021</time>
         </p>
       </section>
-      <section class="footer__content">
-        <ul class="footer__social">
+      <section class="h-full self-center">
+        <ul
+          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12"
+        >
           <li class="footer__socialIcon">
             <a href="https://twitter.com">
               <svg
@@ -300,18 +336,6 @@
         </ul>
       </section>
     </footer>
-    <script
-      type="module"
-      src="../node_modules/jquery/dist/jquery.slim.min.js"
-    ></script>
-    <script
-      type="module"
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <script
-      type="module"
-      src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
-    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
