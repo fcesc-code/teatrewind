@@ -283,7 +283,7 @@ init-firebase.*
 *.svg
 *.tif
 *.tiff
-*.webp
+#*.webp
 #audio
 *.aac
 *.adts
