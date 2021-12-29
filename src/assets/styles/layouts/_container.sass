@@ -1,0 +1,11 @@
+@use '../base/' as *
+  
+.width-container
+  @include smallDevices
+    width: min(100vw, 75rem)
+  @include mediumDevices
+    width: min(85vw, 90rem)
+  @include largeDevices
+    width: min(76vw, 110rem)
+  @include xlargeDevices
+    width: min(62vw, 160rem)

@@ -4,19 +4,22 @@
     "es2021": true,
     "jest/globals": true
   },
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:tailwindcss/recommended"],
   "ignorePatterns": ["*.sass", "*.png", "*.jpg", "*.webp"],
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["jest", "html"],
+  "plugins": ["jest", "html", "tailwindcss"],
   "rules": {
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
-    "no-plusplus": 0
+    "no-plusplus": 0,
+    "tailwindcss/classnames-order": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-contradicting-classname": "error"
   }
 }
