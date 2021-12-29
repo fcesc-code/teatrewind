@@ -1,3 +1,5 @@
+@use 'base/reset'
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&family=Architects+Daughter&display=swap')
 
 @tailwind base
@@ -5,8 +7,6 @@
 @tailwind utilities
 
 @layer base
-  *
-    text-root box-border
   h1 
     @apply px-0 py-6 text-center text-h1
   h2
@@ -45,7 +45,7 @@
 
 @layer components
   .width-container
-    @apply w-container_s md:w-container_md 2xl:w-container_2xl huge:w-container_huge my-0 mx-auto bg-dark 
+    @apply w-container_s md:w-container_md 2xl:w-container_2xl huge:w-container_huge my-0 mx-auto bg-dark
   .list__item
     @apply flex flex-col md:flex-row flex-nowrap md:flex-wrap items-center md:items-start justify-start w-full md:w-80%
   .list__item-number
@@ -56,12 +56,10 @@
     @apply block clear-both
     content: ''
   .list::before
-    @apply border-b border-solid border-txt_lightbluish
-    width: 80%
+    @apply border-b border-solid border-txt_lightbluish w-80%
     content: ''
   .list::after
-    @apply border-t border-solid border-txt_lightbluish
-    width: 80%
+    @apply border-t border-solid border-txt_lightbluish w-80%
     content: ''
   .list__item-number::after
     @apply absolute -top-2 -left-5 p-6 border border-solid border-txt_lightbluish rounded-full
@@ -71,6 +69,7 @@
     width: calc(1rem + 20%)
     content: ''
   .card__content
+    @apply absolute w-full h-full duration-500
     transform-style: preserve-3d
   .card__front
     backface-visibility: hidden
@@ -80,12 +79,14 @@
     transform: rotateY(180deg) translateY(calc(-100% - 1rem))
   .flipped
     transform: rotateY(180deg)
+  .card__container
+    @apply relative w-card h-card m-6 overflow-hidden cursor-pointer box-border
   .card__character
-    @apply py-4 px-6 text-txt_black text-center bg-txt_highlighted text-card leading-12 font-semibold
+    @apply py-4 px-6 text-txt_black text-center bg-txt_highlighted text-card leading-12 font-semibold font-fserif
   .card__description
     @apply my-4 mx-0 text-txt_lightbluish text-center
   .card__actor
     @apply py-4 px-6 text-txt_white text-center bg-txt_contrast text-card leading-12 font-semibold
   .card__img
-    @apply object-cover object-center grayscale
+    @apply object-cover object-center grayscale-1 w-card max-h-card box-border
     

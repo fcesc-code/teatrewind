@@ -75,6 +75,13 @@ module.exports = {
         container_2xl: "min(76vw,110rem)",
         container_huge: "min(62vw,160rem)",
         "80%": "80%",
+        card: "min(60vh,25rem)",
+      },
+      height: {
+        card: "min(calc(60vh + 5rem),30rem)",
+      },
+      maxHeight: {
+        card: "min(60vh,25rem)",
       },
       screens: {
         huge: "3859px",
@@ -82,6 +89,9 @@ module.exports = {
       margin: {
         icons: "calc(3rem*.35)",
         icons_left: "calc(3rem*1.5)",
+      },
+      grayscale: {
+        1: "100%",
       },
     },
   },
