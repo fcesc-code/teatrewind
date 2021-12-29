@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&family=Architects+Daughter&display=swap')
+
 @tailwind base
 @tailwind components
 @tailwind utilities
 
 @layer base
+  *
+    text-root box-border
   h1 
     @apply px-0 py-6 text-center text-h1
   h2
@@ -41,22 +45,16 @@
 
 @layer components
   .width-container
-    @apply w-full my-0 mx-auto bg-dark
+    @apply w-container_s md:w-container_md 2xl:w-container_2xl huge:w-container_huge my-0 mx-auto bg-dark 
   .list__item
-    @apply flex flex-col md:flex-row flex-nowrap md:flex-wrap items-center md:items-start justify-start w-full 
+    @apply flex flex-col md:flex-row flex-nowrap md:flex-wrap items-center md:items-start justify-start w-full md:w-80%
   .list__item-number
     @apply relative w-8 mx-8 my-6 text-txt_lightbluish translate-y-2 self-start md:self-auto
   .footer__socialIcon
-    @apply p-0 my-0 
-    margin: 0 calc(3rem * 1.5)
+    @apply p-0 my-0 mx-icons
   .carousel-inner::after
     @apply block clear-both
     content: ''
-  .carousel-control-next-icon
-    background-position: 50%
-    background-size: 100% 100%
-  .visually-hidden
-    clip: rect(0,0,0,0) !important
   .list::before
     @apply border-b border-solid border-txt_lightbluish
     width: 80%
@@ -66,10 +64,10 @@
     width: 80%
     content: ''
   .list__item-number::after
-    @apply absolute -top-2 -left-5 p-6 border border-solid border-txt_lightbluish 
-    border-radius: 50%
+    @apply absolute -top-2 -left-5 p-6 border border-solid border-txt_lightbluish rounded-full
+    content: ''
   .blockquote__text::before
-    @apply absolute top-4 -left-4 bottom-12 z-2 h-0 border-4 border-solid border-dark
+    @apply absolute top-0 -left-4 bottom-12 z-2 h-0 border-4 border-solid border-dark
     width: calc(1rem + 20%)
     content: ''
   .card__content

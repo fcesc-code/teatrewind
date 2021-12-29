@@ -14,21 +14,23 @@
   <body class="bg-dark">
     <header
       id="top"
-      class="relative flex flex-col shrink-0 items-start justify-center md:justify-start px-4 width-container"
+      class="relative flex flex-col shrink-0 items-start justify-center md:justify-start py-4 width-container"
     >
       <nav>
-        <ul class="flex flex-row flex-wrap items-center justify-end list-none">
+        <ul
+          class="flex flex-row flex-wrap items-center justify-end list-none py-2"
+        >
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_title no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="index.html"
-              >Portada</a
+              >En cartellera</a
             >
           </li>
           <li class="m-0 px-0 py-1 text-txt_title">|</li>
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_title no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="actors.html"
               >Actors</a
             >
@@ -36,7 +38,7 @@
           <li class="m-0 px-0 py-1 text-txt_title">|</li>
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_title no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="tebarri.html"
               >tebarri</a
             >
@@ -45,9 +47,9 @@
       </nav>
     </header>
     <main class="width-container">
-      <header>
-        <h1 class="p-0 text-txt_title">La vida es teatro</h1>
-        <h2 class="p-0 text-txt_lightbluish">Grup tebarri</h2>
+      <header class="py-4">
+        <h1 class="text-txt_title p-0 font-medium">La vida es teatro</h1>
+        <h2 class="text-txt_lightbluish p-0 text-general">Grup tebarri</h2>
       </header>
       <article>
         <section>
@@ -64,7 +66,7 @@
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="0"
-                class="opacity-100"
+                class="bg-txt_white p-0 w-8 border-t-10px border-b-10px border-solid border-transparent cursor-pointer h-1 mx-1 grow-0 schrink basis-auto opacity-50"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -72,17 +74,19 @@
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="1"
+                class="bg-txt_white p-0 w-8 border-t-10px border-b-10px border-solid border-transparent cursor-pointer h-1 mx-1 grow-0 schrink basis-auto opacity-50"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="2"
+                class="bg-txt_white p-0 w-8 border-t-10px border-b-10px border-solid border-transparent cursor-pointer h-1 mx-1 grow-0 schrink basis-auto"
                 aria-label="Slide 3"
               ></button>
             </div>
             <div class="relative w-full overflow-hidden carousel-inner">
-              <div class="relative hidden float-left w-full mr-[-100%] block">
+              <div class="relative float-left w-full mr-[-100%] block">
                 <img
                   src="./assets/images/mascaras.webp"
                   class="d-block w-100"
@@ -105,29 +109,49 @@
               </div>
             </div>
             <button
-              class="absolute top-0 bottom-0 z-1 flex justify-center items-center w-[15%] p-0 text-txt_title text-center bg-none border-0 opacity-1 transition-opacity ease duration-150 motion-reduce:transition-none"
+              class="absolute top-0 bottom-0 z-1 flex justify-center items-center w-15% p-0 text-txt_title text-center bg-none border-0 opacity-50 hover:opacity-100 transition-opacity ease duration-150 motion-reduce:transition-none"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                class="h-8 w-8 inline-block leading-6 text-base"
                 aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="#fff"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </span>
+              <span class="hidden">Previous</span>
             </button>
             <button
-              class="absolute top-0 bottom-0 z-1 flex justify-center items-center w-[15%] p-0 text-txt_title text-center bg-none border-0 opacity-1 transition-opacity ease duration-150 motion-reduce:transition-none"
+              class="absolute top-0 bottom-0 right-0 z-1 flex justify-center items-center w-15% p-0 text-txt_title text-center bg-none border-0 opacity-50 hover:opacity-100 transition-opacity ease duration-150 motion-reduce:transition-none"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
               <span
-                class="inline-block w-8 h-8 bg-no-repeat carousel-control-next-icon"
+                class="h-8 w-8 inline-block leading-6 text-base"
                 aria-hidden="true"
-              ></span>
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="#fff"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
               <span
-                class="absolute w-[1px] h-[1px] p-0 -m-[1px] overflow-hidden whitespace-nowrap border-0 visually-hidden"
+                class="absolute w-[1px] h-[1px] p-0 -m-[1px] overflow-hidden whitespace-nowrap border-0 hidden"
                 >Next</span
               >
             </button>
@@ -235,7 +259,7 @@
           class="relative flex flex-col flex-nowrap items-center justify-start mx-6 my-8"
         >
           <blockquote
-            class="my-4 md:my-0 mx-0 p-7 text-txt_main border-2 border-solid border-txt_highlighted rounded-tr-6"
+            class="my-4 md:my-0 mx-0 p-7 text-txt_main border-t-2 border-r-2 border-solid border-txt_highlighted rounded-tr-6 blockquote__text"
           >
             Tú eres más rica que yo. Las viñas valen un capital. Cada pámpano
             una moneda de plata. Lo que siento es que las tierras...
@@ -243,14 +267,14 @@
             tengo en el corazón, y es la huertecilla esa metida entre mis
             tierras, que no me quieren vender por todo el oro del mundo.
           </blockquote>
-          <cite class="self-end w-[min(80%,30rem)] mb-6 -translate-y-6">
+          <cite class="self-end w-minQuote mb-6 -translate-y-6">
             <p
-              class="pl-8 text-txt_hightlighted border-r-solid border-r-2 border-r-txt_highlighted"
+              class="pl-8 py-0 m-0 text-txt_highlighted border-solid border-r-2 border-txt_highlighted"
             >
               Bodas de Sangre
             </p>
             <p
-              class="pl-8 font-semibold text-txt_black bg-txt_highlighted border-2 border-solid border-txt_highglighted rounded-tl-1 rounded-bl-6 rounded-br-6"
+              class="pl-8 py-0 m-0 font-semibold text-txt_black bg-txt_highlighted border-2 border-solid border-txt_highlighted rounded-tl-1 rounded-bl-6 rounded-br-6"
             >
               Federico García Lorca
             </p>
@@ -297,7 +321,7 @@
       </section>
       <section class="h-full self-center">
         <ul
-          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12"
+          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12 ml-icons_left"
         >
           <li class="footer__socialIcon">
             <a href="https://twitter.com">
