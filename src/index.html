@@ -14,29 +14,29 @@
   <body class="bg-dark">
     <header
       id="top"
-      class="relative w-full my-0 mx-auto bg-dark flex flex-col shrink-0 items-start justify-center md:justify-start px-4"
+      class="relative flex flex-col shrink-0 items-start justify-center md:justify-start py-4 width-container"
     >
       <nav>
         <ul class="flex flex-row flex-wrap items-center justify-end list-none">
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_main no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="actors.html"
               >Actors</a
             >
           </li>
-          <li class="m-0 px-0 py-1 text-txt_title">|</li>
+          <li class="m-0 px-0 py-1 text-txt_main">|</li>
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_main no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="blog.html"
               >Blog</a
             >
           </li>
-          <li class="m-0 px-0 py-1 text-txt_title">|</li>
+          <li class="m-0 px-0 py-1 text-txt_main">|</li>
           <li class="m-0 px-5 py-1">
             <a
-              class="text-txt_title no-underline hover:text-txt_hightlighted focus:text-txt_hightlighted active:text-txt_hightlighted visited:text-txt_title visited:no-underline"
+              class="text-txt_main no-underline hover:text-txt_highlighted focus:text-txt_highlighted active:text-txt_highlighted visited:text-txt_title visited:no-underline"
               href="tebarri.html"
               >tebarri</a
             >
@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main class="m-0 h-full grid grid-customposter">
+    <main class="m-0 h-full grid grid-customposter width-container">
       <h1
         class="justify-self-start self-end m-0 -translate-x-12 grid-title-content"
       >
@@ -79,14 +79,18 @@
         </datetime>
       </section>
     </main>
-    <footer class="footer width-container shrink-0">
-      <section class="footer__content">
-        <p class="footer__text">
-          <a class="footer__links" href="https://github.com/fcesc-code"
+    <footer
+      class="width-container h-12 flex flex-col-reverse md:flex-row flex-nowrap items-center justify-start md:justify-end text-txt_main bg-dark text-m"
+    >
+      <section class="h-full self-center">
+        <p class="p-0 text-m leading-12 text-center md:text-left">
+          <a
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
+            href="https://github.com/fcesc-code"
             >Francesc Brugarolas</a
           >
           <a
-            class="footer__links"
+            class="leading-12 text-txt_main underline decoration-dotted visited:text-[inherit] hover:text-txt_highlighted hover:decoration-solid focus:text-txt_highlighted focus:decoration-solid active:text-txt_highlighted active:decoration-solid"
             href="https://uoc.edu"
             title="Universitat Oberta de Catalunya"
             >UOC</a
@@ -94,8 +98,10 @@
           <time datetime="2021-11">Nov 2021</time>
         </p>
       </section>
-      <section class="footer__content">
-        <ul class="footer__social">
+      <section class="h-full self-center">
+        <ul
+          class="flex flex-row flex-nowrap items-center justify-end h-full ml-[calc(3rem*1.5)] text-m leading-12 ml-icons_left"
+        >
           <li class="footer__socialIcon">
             <a href="https://twitter.com">
               <svg
