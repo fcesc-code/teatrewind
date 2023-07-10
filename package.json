@@ -45,7 +45,7 @@
     "UOC"
   ],
   "devDependencies": {
-    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-env": "^7.22.7",
     "@parcel/transformer-sass": "^2.8.3",
     "autoprefixer": "^10.2.3",
     "eslint": "^8.41.0",
